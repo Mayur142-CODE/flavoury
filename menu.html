@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - Flavoury</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">Flavoury</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="book-table.html">Book Table</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="menu-hero-section py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="hero-banner position-relative">
+                        <img src="images/menu.jpg" 
+                             alt="Our Menu Banner" class="img-fluid rounded shadow" style="height: 400px; width: 100%; object-fit: cover;">
+                        <div class="hero-overlay position-absolute top-50 start-50 translate-middle text-center">
+                            <h1 class="display-3 fw-bold text-white mb-0">Our Menu</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="food-items-section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="display-5 fw-bold text-primary">Food Items</h2>
+          <p class="lead">Discover our delicious vegetarian offerings across different meal times</p>
+        </div>
+      </div>
+      
+      <!-- Tab Navigation -->
+      <ul class="nav nav-tabs justify-content-center mb-5" id="menuTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="breakfast-tab" data-bs-toggle="tab" data-bs-target="#breakfast" type="button" role="tab">
+            <i class="fas fa-sun me-2"></i>Breakfast
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="lunch-tab" data-bs-toggle="tab" data-bs-target="#lunch" type="button" role="tab">
+            <i class="fas fa-sun me-2"></i>Lunch
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="dinner-tab" data-bs-toggle="tab" data-bs-target="#dinner" type="button" role="tab">
+            <i class="fas fa-moon me-2"></i>Dinner
+          </button>
+        </li>
+      </ul>
+  
+      <!-- Tab Content -->
+      <div class="tab-content" id="menuTabsContent">
+        <!-- Breakfast Tab -->  
+        <div class="tab-pane fade show active" id="breakfast" role="tabpanel">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item-card p-4 bg-white rounded shadow">
+                <h5 class="fw-bold text-primary">Classic Pancakes</h5>
+                <p class="text-muted mb-2">Fluffy buttermilk pancakes served with maple syrup and butter</p>
+                <span class="h6 text-primary fw-bold">₹1,080</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item-card p-4 bg-white rounded shadow">
+                <h5 class="fw-bold text-primary">Avocado Toast</h5>
+                <p class="text-muted mb-2">Smashed avocado on sourdough with cherry tomatoes</p>
+                <span class="h6 text-primary fw-bold">₹995</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item-card p-4 bg-white rounded shadow">
+                <h5 class="fw-bold text-primary">French Toast</h5>
+                <p class="text-muted mb-2">Brioche bread dipped in vanilla custard, grilled to perfection</p>
+                <span class="h6 text-primary fw-bold">₹1,160</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item-card p-4 bg-white rounded shadow">
+                <h5 class="fw-bold text-primary">Masala Dosa</h5>
+                <p class="text-muted mb-2">Crispy dosa stuffed with spiced potato filling</p>
+                <span class="h6 text-primary fw-bold">₹850</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item-card p-4 bg-white rounded shadow">
+                <h5 class="fw-bold text-primary">Poha</h5>
+                <p class="text-muted mb-2">Flattened rice with onions, peas, and light spices</p>
+                <span class="h6 text-primary fw-bold">₹750</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item-card p-4 bg-white rounded shadow">
+                <h5 class="fw-bold text-primary">Idli Sambar</h5>
+                <p class="text-muted mb-2">Steamed rice cakes served with tangy lentil soup</p>
+                <span class="h6 text-primary fw-bold">₹780</span>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Lunch Tab -->
+        <div class="tab-pane fade" id="lunch" role="tabpanel">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item-card p-4 bg-white rounded shadow">
+                <h5 class="fw-bold text-primary">Caesar Salad</h5>
+                <p class="text-muted mb-2">Fresh romaine lettuce with parmesan cheese and croutons</p>
+                <span class="h6 text-primary fw-bold">₹1,160</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item-card p-4 bg-white rounded shadow">
+                <h5 class="fw-bold text-primary">Quinoa Bowl</h5>
+                <p class="text-muted mb-2">Quinoa with roasted vegetables, chickpeas, and tahini dressing</p>
+                <span class="h6 text-primary fw-bold">₹1,245</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item-card p-4 bg-white rounded shadow">
+                <h5 class="fw-bold text-primary">Paneer Butter Masala</h5>
+                <p class="text-muted mb-2">Soft paneer cubes cooked in rich tomato-butter gravy</p>
+                <span class="h6 text-primary fw-bold">₹1,495</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item-card p-4 bg-white rounded shadow">
+                <h5 class="fw-bold text-primary">Veg Biryani</h5>
+                <p class="text-muted mb-2">Fragrant basmati rice with fresh vegetables and spices</p>
+                <span class="h6 text-primary fw-bold">₹1,295</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item-card p-4 bg-white rounded shadow">
+                <h5 class="fw-bold text-primary">Dal Tadka</h5>
+                <p class="text-muted mb-2">Yellow lentils tempered with garlic, cumin, and ghee</p>
+                <span class="h6 text-primary fw-bold">₹995</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item-card p-4 bg-white rounded shadow">
+                <h5 class="fw-bold text-primary">Palak Paneer</h5>
+                <p class="text-muted mb-2">Spinach curry cooked with paneer cubes and mild spices</p>
+                <span class="h6 text-primary fw-bold">₹1,395</span>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Dinner Tab -->
+        <div class="tab-pane fade" id="dinner" role="tabpanel">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item-card p-4 bg-white rounded shadow">
+                <h5 class="fw-bold text-primary">Vegetarian Risotto</h5>
+                <p class="text-muted mb-2">Creamy arborio rice with wild mushrooms and truffle oil</p>
+                <span class="h6 text-primary fw-bold">₹1,995</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item-card p-4 bg-white rounded shadow">
+                <h5 class="fw-bold text-primary">Chole Bhature</h5>
+                <p class="text-muted mb-2">Spicy chickpeas curry with fluffy fried bread</p>
+                <span class="h6 text-primary fw-bold">₹1,150</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item-card p-4 bg-white rounded shadow">
+                <h5 class="fw-bold text-primary">Stuffed Paratha</h5>
+                <p class="text-muted mb-2">Whole wheat paratha stuffed with spiced potato or paneer</p>
+                <span class="h6 text-primary fw-bold">₹950</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item-card p-4 bg-white rounded shadow">
+                <h5 class="fw-bold text-primary">Malai Kofta</h5>
+                <p class="text-muted mb-2">Cottage cheese dumplings served in creamy cashew gravy</p>
+                <span class="h6 text-primary fw-bold">₹1,550</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item-card p-4 bg-white rounded shadow">
+                <h5 class="fw-bold text-primary">Paneer Tikka</h5>
+                <p class="text-muted mb-2">Char-grilled paneer cubes marinated with Indian spices</p>
+                <span class="h6 text-primary fw-bold">₹1,350</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="menu-item-card p-4 bg-white rounded shadow">
+                <h5 class="fw-bold text-primary">Veg Pulao</h5>
+                <p class="text-muted mb-2">Fragrant rice cooked with seasonal vegetables</p>
+                <span class="h6 text-primary fw-bold">₹1,150</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+
+  <section class="featured-menu-section py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="display-5 fw-bold text-primary">Featured Menu</h2>
+          <p class="lead">Chef's special recommendations</p>
+        </div>
+      </div>
+  
+      <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+  
+          <!-- First slide -->
+          <div class="carousel-item active">
+            <div class="row g-4">
+              <!-- Paneer Curry -->
+              <div class="col-md-6 col-lg-3">
+                <div class="featured-item-card bg-white rounded shadow overflow-hidden">
+                  <div class="item-image">
+                    <img src="images/paneer.jpg"
+                         alt="Paneer Curry" class="img-fluid" style="height:200px;width:100%;object-fit:cover;">
+                  </div>
+                  <div class="item-content p-4">
+                    <h5 class="fw-bold text-primary">Paneer Curry</h5>
+                    <p class="text-muted mb-2">Rich and creamy paneer cooked in tomato gravy</p>
+                    <span class="h6 text-primary fw-bold">₹260</span>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Pasta -->
+              <div class="col-md-6 col-lg-3">
+                <div class="featured-item-card bg-white rounded shadow overflow-hidden">
+                  <div class="item-image">
+                    <img src="images/pasta.jpg"
+                         alt="Pasta" class="img-fluid" style="height:200px;width:100%;object-fit:cover;">
+                  </div>
+                  <div class="item-content p-4">
+                    <h5 class="fw-bold text-primary">Creamy Pasta</h5>
+                    <p class="text-muted mb-2">Italian pasta tossed in white sauce with herbs</p>
+                    <span class="h6 text-primary fw-bold">₹220</span>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Noodles -->
+              <div class="col-md-6 col-lg-3">
+                <div class="featured-item-card bg-white rounded shadow overflow-hidden">
+                  <div class="item-image">
+                    <img src="images/hakka noodles.png"
+                         alt="Noodles" class="img-fluid" style="height:200px;width:100%;object-fit:cover;">
+                  </div>
+                  <div class="item-content p-4">
+                    <h5 class="fw-bold text-primary">Hakka Noodles</h5>
+                    <p class="text-muted mb-2">Stir-fried noodles with vegetables & soy sauce</p>
+                    <span class="h6 text-primary fw-bold">₹180</span>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Veggie Burger -->
+              <div class="col-md-6 col-lg-3">
+                <div class="featured-item-card bg-white rounded shadow overflow-hidden">
+                  <div class="item-image">
+                    <img src="images/burger.jpg"
+                         alt="Burger" class="img-fluid" style="height:200px;width:100%;object-fit:cover;">
+                  </div>
+                  <div class="item-content p-4">
+                    <h5 class="fw-bold text-primary">Veggie Burger</h5>
+                    <p class="text-muted mb-2">Crispy veg patty with cheese and fresh veggies</p>
+                    <span class="h6 text-primary fw-bold">₹150</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Second slide -->
+          <div class="carousel-item">
+            <div class="row g-4">
+              <!-- Pizza -->
+              <div class="col-md-6 col-lg-3">
+                <div class="featured-item-card bg-white rounded shadow overflow-hidden">
+                  <div class="item-image">
+                    <img src="images/pizza.jpg"
+                         alt="Pizza" class="img-fluid" style="height:200px;width:100%;object-fit:cover;">
+                  </div>
+                  <div class="item-content p-4">
+                    <h5 class="fw-bold text-primary">Cheese Pizza</h5>
+                    <p class="text-muted mb-2">Stone-baked pizza loaded with mozzarella</p>
+                    <span class="h6 text-primary fw-bold">₹300</span>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Snacks -->
+              <div class="col-md-6 col-lg-3">
+                <div class="featured-item-card bg-white rounded shadow overflow-hidden">
+                  <div class="item-image">
+                    <img src="images/snacks.jpg"
+                         alt="Snacks" class="img-fluid" style="height:200px;width:100%;object-fit:cover;">
+                  </div>
+                  <div class="item-content p-4">
+                    <h5 class="fw-bold text-primary">Crispy Snacks</h5>
+                    <p class="text-muted mb-2">Delicious Indian fried snacks with chutneys</p>
+                    <span class="h6 text-primary fw-bold">₹120</span>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Paneer Tikka -->
+              <div class="col-md-6 col-lg-3">
+                <div class="featured-item-card bg-white rounded shadow overflow-hidden">
+                  <div class="item-image">
+                    <img src="images/paneer tikka.jpg"
+                         alt="Paneer Tikka" class="img-fluid" style="height:200px;width:100%;object-fit:cover;">
+                  </div>
+                  <div class="item-content p-4">
+                    <h5 class="fw-bold text-primary">Paneer Tikka</h5>
+                    <p class="text-muted mb-2">Char-grilled paneer cubes marinated in spices</p>
+                    <span class="h6 text-primary fw-bold">₹280</span>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Full Thali -->
+              <div class="col-md-6 col-lg-3">
+                <div class="featured-item-card bg-white rounded shadow overflow-hidden">
+                  <div class="item-image">
+                    <img src="images/full thali.jpg"
+                         alt="Full Thali" class="img-fluid" style="height:200px;width:100%;object-fit:cover;">
+                  </div>
+                  <div class="item-content p-4">
+                    <h5 class="fw-bold text-primary">Indian Full Thali</h5>
+                    <p class="text-muted mb-2">Complete meal with dal, sabzi, roti & rice</p>
+                    <span class="h6 text-primary fw-bold">₹350</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Third slide -->
+          <div class="carousel-item">
+            <div class="row g-4">
+              <!-- Dal Makhani -->
+              <div class="col-md-6 col-lg-3">
+                <div class="featured-item-card bg-white rounded shadow overflow-hidden">
+                  <div class="item-image">
+                    <img src="images/dal makkhani.jpg"
+                         alt="Dal Makhani" class="img-fluid" style="height:200px;width:100%;object-fit:cover;">
+                  </div>
+                  <div class="item-content p-4">
+                    <h5 class="fw-bold text-primary">Dal Makhani</h5>
+                    <p class="text-muted mb-2">Slow-cooked black lentils with cream & butter</p>
+                    <span class="h6 text-primary fw-bold">₹240</span>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Chinese Special -->
+              <div class="col-md-6 col-lg-3">
+                <div class="featured-item-card bg-white rounded shadow overflow-hidden">
+                  <div class="item-image">
+                    <img src="images/chinese special.jpg"
+                         alt="Chinese Dish" class="img-fluid" style="height:200px;width:100%;object-fit:cover;">
+                  </div>
+                  <div class="item-content p-4">
+                    <h5 class="fw-bold text-primary">Chinese Special</h5>
+                    <p class="text-muted mb-2">Manchurian balls with spicy gravy</p>
+                    <span class="h6 text-primary fw-bold">₹260</span>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Soup -->
+              <div class="col-md-6 col-lg-3">
+                <div class="featured-item-card bg-white rounded shadow overflow-hidden">
+                  <div class="item-image">
+                    <img src="images/soup.jpg"
+                         alt="Soup" class="img-fluid" style="height:200px;width:100%;object-fit:cover;">
+                  </div>
+                  <div class="item-content p-4">
+                    <h5 class="fw-bold text-primary">Hot Soup</h5>
+                    <p class="text-muted mb-2">Steaming hot veg soup with spices</p>
+                    <span class="h6 text-primary fw-bold">₹110</span>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Limited Thali -->
+              <div class="col-md-6 col-lg-3">
+                <div class="featured-item-card bg-white rounded shadow overflow-hidden">
+                  <div class="item-image">
+                    <img src="images/limited thali.jpg"
+                         alt="Limited Thali" class="img-fluid" style="height:200px;width:100%;object-fit:cover;">
+                  </div>
+                  <div class="item-content p-4">
+                    <h5 class="fw-bold text-primary">Limited Thali</h5>
+                    <p class="text-muted mb-2">Mini thali with dal, sabzi, roti & rice</p>
+                    <span class="h6 text-primary fw-bold">₹200</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Controls -->
+        <div class="row mt-4">
+          <div class="col-12 text-center">
+            <button class="btn btn-outline-primary me-2" type="button"
+                    data-bs-target="#featuredCarousel" data-bs-slide="prev">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="btn btn-outline-primary" type="button"
+                    data-bs-target="#featuredCarousel" data-bs-slide="next">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+      
+
+    <!-- Call to Action -->
+    <section class="menu-cta-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold text-white mb-4">Ready to Taste Excellence?</h2>
+                    <p class="lead text-white mb-4">Make a reservation or order online to experience our culinary masterpieces.</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="contact.html" class="btn btn-light btn-lg">Make Reservation</a>
+                        <a href="contact.html" class="btn btn-outline-light btn-lg">Order Online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">Flavoury</h5>
+                    <p class="mb-3">Experience the finest culinary delights crafted with passion and precision.</p>
+                    <div class="newsletter">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="services.html" class="text-light text-decoration-none">Our Services</a></li>
+                        <li><a href="menu.html" class="text-light text-decoration-none">Menu</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>123 Food Street, City, State 12345</p>
+                    <p class="mb-2"><i class="fas fa-phone me-2"></i>(555) 123-4567</p>
+                    <p class="mb-3"><i class="fas fa-envelope me-2"></i>info@flavoury.com</p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Flavoury. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

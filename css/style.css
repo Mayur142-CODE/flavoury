@@ -1,0 +1,690 @@
+/* Flavoury Website Styles */
+
+:root {
+    --primary-color: #8B4513;
+    --secondary-color: #D2691E;
+    --accent-color: #F4A460;
+    --dark-color: #2C1810;
+    --light-color: #F5F5DC;
+    --text-dark: #333;
+    --text-light: #666;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Header Styles */
+.navbar-brand {
+    color: white !important;
+    font-size: 2rem;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--accent-color) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--light-color) 0%, #ffffff 100%);
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-image img {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Services Section */
+.services-section {
+    background-color: var(--light-color);
+}
+
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15) !important;
+}
+
+.service-icon {
+    color: var(--primary-color);
+}
+
+/* Taste Section */
+.taste-section {
+    background: linear-gradient(135deg, #ffffff 0%, var(--light-color) 100%);
+}
+
+.taste-image img {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Teams Section */
+.teams-section {
+    background-color: var(--light-color);
+}
+
+.team-member {
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-photo img {
+    transition: transform 0.3s ease;
+}
+
+.team-photo:hover img {
+    transform: scale(1.05);
+}
+
+/* Reviews Section */
+.reviews-section {
+    background: linear-gradient(135deg, var(--light-color) 0%, #ffffff 100%);
+}
+
+.review-card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15) !important;
+}
+
+.reviewer-avatar img {
+    border: 3px solid var(--primary-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-color) !important;
+}
+
+.footer a {
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--accent-color) !important;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+.social-links a:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+/* Carousel Controls */
+.carousel-controls .btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .display-5 {
+        font-size: 2rem;
+    }
+    
+    .hero-section {
+        min-height: 60vh;
+    }
+    
+    .team-photo img {
+        width: 150px !important;
+        height: 150px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .display-5 {
+        font-size: 1.75rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-in-left {
+    animation: slideInLeft 1s ease-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in-right {
+    animation: slideInRight 1s ease-out;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* About Page Styles */
+.about-hero-section {
+    background: linear-gradient(135deg, var(--light-color) 0%, #ffffff 100%);
+}
+
+.hero-banner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.discover-section {
+    background: linear-gradient(135deg, #ffffff 0%, var(--light-color) 100%);
+}
+
+.discover-image img {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.team-member-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    height: 100%;
+}
+
+.team-member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15) !important;
+}
+
+.team-member-card .team-photo img {
+    transition: transform 0.3s ease;
+}
+
+.team-member-card:hover .team-photo img {
+    transform: scale(1.05);
+}
+
+.our-story-section {
+    background: linear-gradient(135deg, var(--light-color) 0%, #ffffff 100%);
+}
+
+.story-stat {
+    padding: 2rem 1rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.story-stat:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact Page Styles */
+.contact-hero-section {
+    background: linear-gradient(135deg, var(--light-color) 0%, #ffffff 100%);
+}
+
+.locations-section {
+    background: linear-gradient(135deg, #ffffff 0%, var(--light-color) 100%);
+}
+
+.contact-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+.map-placeholder {
+    border: 2px dashed var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.map-placeholder:hover {
+    border-color: var(--secondary-color);
+    background-color: #f8f9fa;
+}
+
+.get-in-touch-section {
+    background-color: var(--light-color);
+}
+
+.contact-image img {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.contact-form-container {
+    background: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.contact-form .form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(139, 69, 19, 0.25);
+}
+
+.contact-methods-section {
+    background: linear-gradient(135deg, var(--light-color) 0%, #ffffff 100%);
+}
+
+.contact-method {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    height: 100%;
+}
+
+.contact-method:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15) !important;
+}
+
+.method-icon {
+    color: var(--primary-color);
+}
+
+/* Services Page Styles */
+.services-hero-section {
+    background: linear-gradient(135deg, var(--light-color) 0%, #ffffff 100%);
+}
+
+.services-content-section {
+    background: linear-gradient(135deg, #ffffff 0%, var(--light-color) 100%);
+}
+
+.service-description {
+    background: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.service-image img,
+.service-image-large img {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.feature-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-description {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.detailed-services-section {
+    background-color: var(--light-color);
+}
+
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15) !important;
+}
+
+.cta-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+/* Menu Page Styles */
+.menu-hero-section {
+    background: linear-gradient(135deg, var(--light-color) 0%, #ffffff 100%);
+}
+
+.food-items-section {
+    background: linear-gradient(135deg, #ffffff 0%, var(--light-color) 100%);
+}
+
+.nav-tabs .nav-link {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin: 0 5px;
+    padding: 12px 24px;
+    font-weight: 600;
+    color: var(--text-dark);
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.nav-tabs .nav-link.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.menu-item-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    height: 100%;
+}
+
+.menu-item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15) !important;
+}
+
+.featured-menu-section {
+    background-color: var(--light-color);
+}
+
+.featured-item-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.featured-item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15) !important;
+}
+
+.item-image img {
+    transition: transform 0.3s ease;
+}
+
+.featured-item-card:hover .item-image img {
+    transform: scale(1.05);
+}
+
+.menu-cta-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+/* Book Table Page Styles */
+.book-hero-section {
+    background: linear-gradient(135deg, var(--light-color) 0%, #ffffff 100%);
+}
+
+.booking-form-section {
+    background: linear-gradient(135deg, #ffffff 0%, var(--light-color) 100%);
+}
+
+.booking-container {
+    position: relative;
+}
+
+.booking-form-container {
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.booking-form-container:hover {
+    transform: translateY(-5px);
+}
+
+.booking-form .form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.booking-form .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(139, 69, 19, 0.25);
+}
+
+.booking-form .form-label {
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.image-gallery-section {
+    background-color: var(--light-color);
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.05);
+}
+
+.restaurant-info-section {
+    background: linear-gradient(135deg, var(--light-color) 0%, #ffffff 100%);
+}
+
+.info-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Utility Classes */
+.text-accent {
+    color: var(--accent-color) !important;
+}
+
+.bg-accent {
+    background-color: var(--accent-color) !important;
+}
+
+.shadow-custom {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.border-primary {
+    border-color: var(--primary-color) !important;
+}
+
+/* Form Styles */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(139, 69, 19, 0.25);
+}
+
+/* Card Hover Effects */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.team-member-card .social-links a {
+    color: #6c757d; /* muted gray */
+    transition: color 0.3s;
+  }
+  .team-member-card .social-links a:hover .fa-linkedin-in { color: #0A66C2; }
+  .team-member-card .social-links a:hover .fa-twitter { color: #1DA1F2; }
+  .team-member-card .social-links a:hover .fa-instagram { color: #E1306C; }
+
+
+  .gallery-masonry {
+    column-count: 3;
+    column-gap: 1rem;
+  }
+  .gallery-item {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  .gallery-item img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+  .gallery-item img:hover {
+    transform: scale(1.05);
+  }
+  @media (max-width: 768px) {
+    .gallery-masonry { column-count: 2; }
+  }
+  @media (max-width: 576px) {
+    .gallery-masonry { column-count: 1; }
+  }

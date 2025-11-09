@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table - Flavoury</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">Flavoury</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="book-table.html">Book Table</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="book-hero-section py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="hero-banner position-relative">
+                        <img src="images/book a table.jpg" alt="Book a Table Banner" class="img-fluid rounded shadow"
+                            style="height: 400px; width: 100%; object-fit: cover;">
+                        <div class="hero-overlay position-absolute top-50 start-50 translate-middle text-center">
+                            <h1 class="display-3 fw-bold text-white mb-0">Book A Table</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-form-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="booking-container text-center">
+                        <div class="mb-4">
+                            <a href="#booking-form" class="btn btn-primary btn-lg">Book Now</a>
+                        </div>
+
+                        <div id="booking-form" class="booking-form-container bg-white p-5 rounded shadow">
+                            <h2 class="display-6 fw-bold text-primary mb-4">Reserve Your Table</h2>
+                            <p class="lead mb-4">Experience fine dining at its best. Book your table today!</p>
+
+                            <form class="booking-form" onsubmit="return validateBooking()">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="name" class="form-label fw-bold">Name</label>
+                                            <input type="text" class="form-control" id="name"
+                                                placeholder="Your full name">
+                                            <span class="text-danger fw-bold" id="nameErr"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="email" class="form-label fw-bold">Email</label>
+                                            <input type="text" class="form-control" id="email"
+                                                placeholder="your.email@example.com">
+                                            <span class="text-danger fw-bold" id="emailErr"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="phone" class="form-label fw-bold">Phone</label>
+                                            <input type="text" class="form-control" id="phone"
+                                                placeholder="Your phone number">
+                                            <span class="text-danger fw-bold" id="phoneErr"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="date" class="form-label fw-bold">Date</label>
+                                            <input type="date" class="form-control" id="date">
+                                            <span class="text-danger fw-bold" id="dateErr"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="time" class="form-label fw-bold">Time</label>
+                                            <select class="form-control" id="time">
+                                                <option value="">Select time</option>
+                                                <option value="11:00">11:00 AM</option>
+                                                <option value="11:30">11:30 AM</option>
+                                                <option value="12:00">12:00 PM</option>
+                                                <option value="12:30">12:30 PM</option>
+                                                <option value="13:00">1:00 PM</option>
+                                                <option value="13:30">1:30 PM</option>
+                                                <option value="14:00">2:00 PM</option>
+                                                <option value="18:00">6:00 PM</option>
+                                                <option value="18:30">6:30 PM</option>
+                                                <option value="19:00">7:00 PM</option>
+                                                <option value="19:30">7:30 PM</option>
+                                                <option value="20:00">8:00 PM</option>
+                                                <option value="20:30">8:30 PM</option>
+                                                <option value="21:00">9:00 PM</option>
+                                            </select>
+                                            <span class="text-danger fw-bold" id="timeErr"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="guests" class="form-label fw-bold">Number of Guests</label>
+                                            <select class="form-control" id="guests">
+                                                <option value="">Select guests</option>
+                                                <option value="1">1 Person</option>
+                                                <option value="2">2 People</option>
+                                                <option value="3">3 People</option>
+                                                <option value="4">4 People</option>
+                                                <option value="5">5 People</option>
+                                                <option value="6">6 People</option>
+                                                <option value="7">7 People</option>
+                                                <option value="8">8 People</option>
+                                                <option value="9">9 People</option>
+                                                <option value="10">10+ People</option>
+                                            </select>
+                                            <span class="text-danger fw-bold" id="guestErr"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="request" class="form-label fw-bold">Special Request</label>
+                                            <textarea class="form-control" id="request" rows="4"
+                                                placeholder="Any special dietary requirements, celebrations, or preferences..."></textarea>
+                                            <span class="text-danger fw-bold" id="requestErr"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="text-center mt-4">
+                                    <button type="submit" class="btn btn-dark btn-lg px-5">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="image-gallery-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold text-primary">Image Gallery</h2>
+                    <p class="lead">A glimpse of our ambience and food experience</p>
+                </div>
+            </div>
+
+            <!-- Masonry Style -->
+            <div class="gallery-masonry">
+                <!-- Paneer Curry -->
+                <div class="gallery-item">
+                    <img src="images/paneer.jpg" alt="Paneer Curry">
+                </div>
+
+                <!-- Creamy Pasta -->
+                <div class="gallery-item">
+                    <img src="images/pasta.jpg" alt="Creamy Pasta">
+                </div>
+
+                <!-- Hakka Noodles -->
+                <div class="gallery-item">
+                    <img src="images/big pizza.jpg" alt="Big Pizza">
+                </div>
+
+                <!-- Veggie Burger -->
+                <div class="gallery-item">
+                    <img src="images/burger.jpg" alt="Veggie Burger">
+                </div>
+
+                <!-- Cheese Pizza -->
+                <div class="gallery-item">
+                    <img src="images/pizza.jpg" alt="Cheese Pizza">
+                </div>
+
+                <!-- Crispy Snacks -->
+                <div class="gallery-item">
+                    <img src="images/food.jpg" alt="Crispy Snacks">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/home.jpg" alt="Hot Soup">
+                </div>
+                <!-- Paneer Tikka -->
+                <div class="gallery-item">
+                    <img src="images/paneer tikka.jpg" alt="Paneer Tikka">
+                </div>
+
+                <!-- Indian Full Thali -->
+                <div class="gallery-item">
+                    <img src="images/contact us.jpg" alt="Indian Full Thali">
+                </div>
+
+                <!-- Dal Makhani -->
+                <div class="gallery-item">
+                    <img src="images/dal makkhani.jpg" alt="Dal Makhani">
+                </div>
+
+                <!-- Chinese Special -->
+                <div class="gallery-item">
+                    <img src="images/chinese special.jpg" alt="Chinese Special">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Restaurant Info Section -->
+    <section class="restaurant-info-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-6 fw-bold text-primary mb-4">Why Choose Flavoury?</h2>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="info-card p-4">
+                                <i class="fas fa-clock fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">Flexible Hours</h5>
+                                <p class="text-muted">Open 7 days a week with extended hours for your convenience</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="info-card p-4">
+                                <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">Group Friendly</h5>
+                                <p class="text-muted">Perfect for intimate dinners or large group celebrations</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="info-card p-4">
+                                <i class="fas fa-star fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">Premium Service</h5>
+                                <p class="text-muted">Exceptional service and attention to detail in every visit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">Flavoury</h5>
+                    <p class="mb-3">Experience the finest culinary delights crafted with passion and precision.</p>
+                    <div class="newsletter">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="services.html" class="text-light text-decoration-none">Our Services</a></li>
+                        <li><a href="menu.html" class="text-light text-decoration-none">Menu</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                        <li><a href="book-table.html" class="text-light text-decoration-none">Book Table</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>123 Food Street, City, State 12345</p>
+                    <p class="mb-2"><i class="fas fa-phone me-2"></i>(555) 123-4567</p>
+                    <p class="mb-3"><i class="fas fa-envelope me-2"></i>info@flavoury.com</p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Flavoury. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bookAtableform.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

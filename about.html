@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Flavoury</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">Flavoury</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="book-table.html">Book Table</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="about-hero-section py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="hero-banner position-relative">
+                        <img src="images/about us.jpg" 
+                             alt="About Us Banner" class="img-fluid rounded shadow" style="height: 400px; width: 100%; object-fit: cover;">
+                        <div class="hero-overlay position-absolute top-50 start-50 translate-middle text-center">
+                            <h1 class="display-3 fw-bold text-white mb-0">About Us</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discover Section -->
+<section class="discover-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Text Content -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="discover-content">
+            <h2 class="display-5 fw-bold text-primary mb-4">Discover the Heart of Flavoury</h2>
+            <p class="lead mb-3">At Flavoury, we believe that great food is more than just sustenance – it's an experience that brings people together and creates lasting memories.</p>
+            <p class="mb-3">Our journey began with a simple passion for exceptional cuisine and a commitment to using only the finest, freshest ingredients sourced from local farmers and trusted suppliers.</p>
+            <p class="mb-3">Every dish we create tells a story, blending traditional techniques with innovative approaches to deliver flavors that surprise and delight your palate.</p>
+            <p class="mb-3">We take pride in our attention to detail, from the careful selection of ingredients to the artistic presentation of each plate that leaves our kitchen.</p>
+            <p class="mb-4">Join us on this culinary adventure and discover why Flavoury has become the destination for food lovers who appreciate quality, creativity, and exceptional service.</p>
+            <a href="menu.html" class="btn btn-primary btn-lg">Explore Our Menu</a>
+          </div>
+        </div>
+  
+        <!-- Image -->
+        <div class="col-lg-6">
+          <div class="discover-image text-center">
+            <img 
+              src="images/about us side.jpg" 
+              alt="Discover Flavoury" 
+              class="img-fluid rounded shadow"
+              style="width: 100%; max-height: 450px; object-fit: cover;">
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Our Team Section -->
+<section class="our-team-section py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2 class="display-5 fw-bold text-primary">Our Team</h2>
+        <p class="lead">Meet the passionate individuals behind Flavoury's success</p>
+      </div>
+    </div>
+
+    <!-- Carousel Wrapper -->
+    <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row g-4">
+            <!-- Chef 1 -->
+            <div class="col-md-4">
+              <div class="team-member-card text-center p-4 bg-white rounded shadow">
+                <div class="team-photo mb-3">
+                  <img src="images/chef1.jpg" alt="Chef John Smith" 
+                       class="img-fluid rounded-circle shadow"
+                       style="width:200px; height:200px; object-fit:cover;">
+                </div>
+                <h4 class="fw-bold text-primary">Chef John Smith</h4>
+                <p class="text-muted mb-2">Head Chef</p>
+                <p class="small">John leads the kitchen with innovation and precision. His mastery of flavors ensures every dish exceeds expectations.</p>
+                <div class="social-links mt-3">
+                  <a href="#" class="me-2 text-secondary"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="me-2 text-secondary"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="text-secondary"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chef 2 -->
+            <div class="col-md-4">
+              <div class="team-member-card text-center p-4 bg-white rounded shadow">
+                <div class="team-photo mb-3">
+                  <img src="images/chef2.webp" alt="Chef Sarah Johnson" 
+                       class="img-fluid rounded-circle shadow"
+                       style="width:200px; height:200px; object-fit:cover;">
+                </div>
+                <h4 class="fw-bold text-primary">Chef Sarah Johnson</h4>
+                <p class="text-muted mb-2">Pastry Chef</p>
+                <p class="small">Sarah creates artistic desserts that blend tradition with creativity, making sweet moments unforgettable.</p>
+                <div class="social-links mt-3">
+                  <a href="#" class="me-2 text-secondary"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="me-2 text-secondary"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="text-secondary"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chef 3 -->
+            <div class="col-md-4">
+              <div class="team-member-card text-center p-4 bg-white rounded shadow">
+                <div class="team-photo mb-3">
+                  <img src="images/chef3.jpg" alt="Chef Mike Davis" 
+                       class="img-fluid rounded-circle shadow"
+                       style="width:200px; height:200px; object-fit:cover;">
+                </div>
+                <h4 class="fw-bold text-primary">Chef Mike Davis</h4>
+                <p class="text-muted mb-2">Sous Chef</p>
+                <p class="small">Mike is the right hand of our kitchen operations, ensuring flawless execution and perfect teamwork.</p>
+                <div class="social-links mt-3">
+                  <a href="#" class="me-2 text-secondary"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="me-2 text-secondary"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="text-secondary"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row g-4">
+            <!-- Chef 4 -->
+            <div class="col-md-4">
+              <div class="team-member-card text-center p-4 bg-white rounded shadow">
+                <div class="team-photo mb-3">
+                  <img src="images/chef4.webp" alt="Chef Emily Brown" 
+                       class="img-fluid rounded-circle shadow"
+                       style="width:200px; height:200px; object-fit:cover;">
+                </div>
+                <h4 class="fw-bold text-primary">Chef Emily Brown</h4>
+                <p class="text-muted mb-2">Grill Chef</p>
+                <p class="small">Emily specializes in smoky grilled dishes and bold marinades that bring a unique depth to every plate.</p>
+                <div class="social-links mt-3">
+                  <a href="#" class="me-2 text-secondary"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="me-2 text-secondary"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="text-secondary"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chef 5 -->
+            <div class="col-md-4">
+              <div class="team-member-card text-center p-4 bg-white rounded shadow">
+                <div class="team-photo mb-3">
+                  <img src="images/chef5.webp" alt="Chef Anna Wilson" 
+                       class="img-fluid rounded-circle shadow"
+                       style="width:200px; height:200px; object-fit:cover;">
+                </div>
+                <h4 class="fw-bold text-primary">Chef Anna Wilson</h4>
+                <p class="text-muted mb-2">Junior Chef</p>
+                <p class="small">Anna brings fresh energy and creativity, supporting the team with new-age techniques and vibrant plating.</p>
+                <div class="social-links mt-3">
+                  <a href="#" class="me-2 text-secondary"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="me-2 text-secondary"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="text-secondary"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chef 6 -->
+            <div class="col-md-4">
+              <div class="team-member-card text-center p-4 bg-white rounded shadow">
+                <div class="team-photo mb-3">
+                  <img src="images/chef6.jpg" alt="Chef Robert Lee" 
+                       class="img-fluid rounded-circle shadow"
+                       style="width:200px; height:200px; object-fit:cover;">
+                </div>
+                <h4 class="fw-bold text-primary">Chef Robert Lee</h4>
+                <p class="text-muted mb-2">Assistant Chef</p>
+                <p class="small">Robert ensures smooth operations in the kitchen, blending precision and efficiency into daily service.</p>
+                <div class="social-links mt-3">
+                  <a href="#" class="me-2 text-secondary"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="me-2 text-secondary"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="text-secondary"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel Controls -->
+      <div class="text-center mt-4">
+        <button class="btn btn-outline-primary me-2" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="btn btn-outline-primary" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+    <!-- Our Story Section -->
+    <section class="our-story-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold text-primary mb-4">Our Story</h2>
+                    <p class="lead mb-4">Founded in 2018, Flavoury began as a small family restaurant with big dreams. What started as a passion project has grown into a beloved culinary destination that serves thousands of satisfied customers each year.</p>
+                    <div class="row g-4 mt-4">
+                        <div class="col-md-4">
+                            <div class="story-stat text-center">
+                                <h3 class="display-4 fw-bold text-primary">6+</h3>
+                                <p class="text-muted">Years of Excellence</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="story-stat text-center">
+                                <h3 class="display-4 fw-bold text-primary">50K+</h3>
+                                <p class="text-muted">Happy Customers</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="story-stat text-center">
+                                <h3 class="display-4 fw-bold text-primary">100+</h3>
+                                <p class="text-muted">Menu Items</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">Flavoury</h5>
+                    <p class="mb-3">Experience the finest culinary delights crafted with passion and precision.</p>
+                    <div class="newsletter">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="services.html" class="text-light text-decoration-none">Our Services</a></li>
+                        <li><a href="menu.html" class="text-light text-decoration-none">Menu</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>123 Food Street, City, State 12345</p>
+                    <p class="mb-2"><i class="fas fa-phone me-2"></i>(555) 123-4567</p>
+                    <p class="mb-3"><i class="fas fa-envelope me-2"></i>info@flavoury.com</p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Flavoury. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

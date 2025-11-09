@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Flavoury</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="admin-layout">
+    <nav class="topbar"> <button class="btn btn-outline-secondary me-3 d-lg-none" type="button"
+        data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false"
+        aria-label="Toggle sidebar"><i class="fa-solid fa-bars"></i></button> <span
+        class="fw-bold text-primary">Flavoury Admin</span>
+      <div class="ms-auto d-flex align-items-center gap-3"> <a class="text-decoration-none" href="#">Admin</a> <a
+          class="text-decoration-none" href="../auth.html">User</a> </div>
+    </nav>
+    <aside class="sidebar collapse d-lg-block" id="sidebar">
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link active" href=""><i class="fa-solid fa-gauge me-2"></i>Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="manage-bookings.html""><i class=" fa-solid fa-calendar-check
+            me-2"></i>Manage Bookings</a></li>
+        <li class="nav-item"><a class="nav-link" href="manage-menu.html""><i class=" fa-solid fa-utensils
+            me-2"></i>Manage Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="manage-reviews.html""><i class=" fa-solid fa-star
+            me-2"></i>Manage Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="website-settings.html""><i class=" fa-solid fa-gear
+            me-2"></i>Website Settings</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact-inquiries.html""><i class=" fa-solid fa-envelope
+            me-2"></i>Contact Inquiries</a></li>
+      </ul>
+    </aside>
+    <main class="content container">
+      <div class="row g-3 mb-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="stat-card">
+            <div class="icon"><i class="fa-solid fa-users"></i></div>
+            <div>
+              <div class="small text-muted">Total Clients</div>
+              <div class="h5 fw-bold">1,245</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="stat-card">
+            <div class="icon"><i class="fa-solid fa-receipt"></i></div>
+            <div>
+              <div class="small text-muted">Total Bookings</div>
+              <div class="h5 fw-bold">3,482</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="stat-card">
+            <div class="icon"><i class="fa-solid fa-burger"></i></div>
+            <div>
+              <div class="small text-muted">Total Menu Items</div>
+              <div class="h5 fw-bold">128</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="stat-card">
+            <div class="icon"><i class="fa-solid fa-inbox"></i></div>
+            <div>
+              <div class="small text-muted">Total Inquiries</div>
+              <div class="h5 fw-bold">245</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-card mb-3">
+        <h5 class="section-title">Today bookings</h5>
+        <div class="table-responsive">
+          <table class="table table-bordered align-middle">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Name</th>
+                <th>Guests</th>
+                <th>Contact</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>11:30 AM</td>
+                <td>Emily Wilson</td>
+                <td>2</td>
+                <td>(555) 111-2233</td>
+                <td><span class="badge bg-success">Confirmed</span></td>
+              </tr>
+              <tr>
+                <td>01:00 PM</td>
+                <td>John Smith</td>
+                <td>4</td>
+                <td>(555) 444-5566</td>
+                <td><span class="badge bg-warning text-dark">Pending</span></td>
+              </tr>
+              <tr>
+                <td>06:30 PM</td>
+                <td>Sarah Johnson</td>
+                <td>3</td>
+                <td>(555) 777-8899</td>
+                <td><span class="badge bg-success">Confirmed</span></td>
+              </tr>
+              <tr>
+                <td>08:00 PM</td>
+                <td>Michael Brown</td>
+                <td>5</td>
+                <td>(555) 222-3344</td>
+                <td><span class="badge bg-danger">Cancelled</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="section-card">
+        <h5 class="section-title">Most Liked Food Items</h5>
+        <div class="table-responsive">
+          <table class="table table-bordered align-middle">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Category</th>
+                <th>Likes</th>
+                <th>Orders</th>
+                <th>Rating</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Truffle Pasta</td>
+                <td>Dinner</td>
+                <td>1,204</td>
+                <td>2,314</td>
+                <td>4.9</td>
+              </tr>
+              <tr>
+                <td>Avocado Toast</td>
+                <td>Breakfast</td>
+                <td>988</td>
+                <td>1,532</td>
+                <td>4.7</td>
+              </tr>
+              <tr>
+                <td>Grilled Chicken Sandwich</td>
+                <td>Lunch</td>
+                <td>845</td>
+                <td>1,221</td>
+                <td>4.6</td>
+              </tr>
+              <tr>
+                <td>Chocolate Soufflé</td>
+                <td>Dessert</td>
+                <td>1,034</td>
+                <td>1,876</td>
+                <td>4.8</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

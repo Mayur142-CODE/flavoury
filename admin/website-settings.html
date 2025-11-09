@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Settings - Flavoury Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="admin-layout">
+        <nav class="topbar">
+            <button class="btn btn-outline-secondary me-3 d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle sidebar"><i
+                    class="fa-solid fa-bars"></i></button>
+            <span class="fw-bold text-primary">Flavoury Admin</span>
+            <div class="ms-auto d-flex align-items-center gap-3">
+                <a class="text-decoration-none" href="#">Admin</a>
+                <a class="text-decoration-none" href="../auth.html">User</a>
+            </div>
+        </nav>
+        <aside class="sidebar collapse d-lg-block" id="sidebar">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="dashboard.html"><i
+                            class="fa-solid fa-gauge me-2"></i>Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage-bookings.html"><i
+                            class="fa-solid fa-calendar-check me-2"></i>Manage Bookings</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage-menu.html"><i
+                            class="fa-solid fa-utensils me-2"></i>Manage Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage-reviews.html"><i
+                            class="fa-solid fa-star me-2"></i>Manage Reviews</a></li>
+                <li class="nav-item"><a class="nav-link active" href="website-settings.html"><i
+                            class="fa-solid fa-gear me-2"></i>Website Settings</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact-inquiries.html"><i
+                            class="fa-solid fa-envelope me-2"></i>Contact Inquiries</a></li>
+            </ul>
+        </aside>
+
+
+        <main class="content container page-container">
+            <h4 class="fw-bold text-primary mb-4">Website Settings</h4>
+
+            <form id="settingsForm" onsubmit="return validateSettings()">
+
+                <!-- Header & Branding -->
+                <div class="section-card mb-4">
+                    <h6 class="fw-bold mb-3">Header & Branding</h6>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label fw-bold">Site Title</label>
+                            <input type="text" class="form-control" id="siteTitle" placeholder="Flavoury">
+                            <span class="text-danger fw-bold" id="siteTitleErr"></span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label fw-bold">Tagline</label>
+                            <input type="text" class="form-control" id="tagline"
+                                placeholder="Experience the finest culinary delights">
+                            <span class="text-danger fw-bold" id="taglineErr"></span>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label class="form-label fw-bold">Logo URL</label>
+                            <input type="text" class="form-control" id="logoUrl"
+                                placeholder="https://example.com/logo.png">
+                            <span class="text-danger fw-bold" id="logoErr"></span>
+                        </div>
+
+                        <div class="col-md-9">
+                            <label class="form-label fw-bold">Header CTA Text</label>
+                            <input type="text" class="form-control" id="ctaText" placeholder="Reserve Now">
+                            <span class="text-danger fw-bold" id="ctaErr"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact & Map -->
+                <div class="section-card mb-4">
+                    <h6 class="fw-bold mb-3">Contact & Map</h6>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <label class="form-label fw-bold">Address Line 1</label>
+                            <input type="text" class="form-control" id="address1" placeholder="123 Food Street">
+                            <span class="text-danger fw-bold" id="address1Err"></span>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label class="form-label fw-bold">Address Line 2</label>
+                            <input type="text" class="form-control" id="address2" placeholder="Downtown District">
+                        </div>
+
+                        <div class="col-md-4">
+                            <label class="form-label fw-bold">City</label>
+                            <input type="text" class="form-control" id="city" placeholder="Your City">
+                            <span class="text-danger fw-bold" id="cityErr"></span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label fw-bold">Phone</label>
+                            <input type="text" class="form-control" id="phone" placeholder="(555) 123-4567">
+                            <span class="text-danger fw-bold" id="phoneErr"></span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label fw-bold">Email</label>
+                            <input type="text" class="form-control" id="email" placeholder="info@flavoury.com">
+                            <span class="text-danger fw-bold" id="emailErr"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Theme & Typography -->
+                <div class="section-card mb-4">
+                    <h6 class="fw-bold mb-3">Theme & Typography</h6>
+                    <div class="row g-3 align-items-end">
+                        <div class="col-md-3">
+                            <label class="form-label fw-bold">Primary Color</label>
+                            <input type="text" class="form-control" id="primaryColor" placeholder="#0d6efd">
+                            <span class="text-danger fw-bold" id="primaryColorErr"></span>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label class="form-label fw-bold">Secondary Color</label>
+                            <input type="text" class="form-control" id="secondaryColor" placeholder="#fd7e14">
+                            <span class="text-danger fw-bold" id="secondaryColorErr"></span>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label class="form-label fw-bold">Accent Color</label>
+                            <input type="text" class="form-control" id="accentColor" placeholder="#f8d7da">
+                            <span class="text-danger fw-bold" id="accentColorErr"></span>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label class="form-label fw-bold">Neutral Color</label>
+                            <input type="text" class="form-control" id="neutralColor" placeholder="#6c757d">
+                            <span class="text-danger fw-bold" id="neutralColorErr"></span>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label fw-bold">Font Style</label>
+                            <select class="form-select" id="fontStyle">
+                                <option value="">Select font style</option>
+                                <option>Default (System)</option>
+                                <option>Serif</option>
+                                <option>Sans-serif</option>
+                                <option>Monospace</option>
+                            </select>
+                            <span class="text-danger fw-bold" id="fontStyleErr"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary px-4">Submit</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <script src="js/settingform.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

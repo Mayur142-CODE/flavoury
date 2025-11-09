@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Reviews - Flavoury Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <nav class="topbar">
+            <button class="btn btn-outline-secondary me-3 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle sidebar"><i class="fa-solid fa-bars"></i></button>
+            <span class="fw-bold text-primary">Flavoury Admin</span>
+            <div class="ms-auto d-flex align-items-center gap-3">
+                <a class="text-decoration-none" href="#">Admin</a>
+                <a class="text-decoration-none" href="../auth.html">User</a>
+            </div>
+        </nav>
+        <aside class="sidebar collapse d-lg-block" id="sidebar">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="dashboard.html"><i class="fa-solid fa-gauge me-2"></i>Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage-bookings.html"><i class="fa-solid fa-calendar-check me-2"></i>Manage Bookings</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage-menu.html"><i class="fa-solid fa-utensils me-2"></i>Manage Menu</a></li>
+                <li class="nav-item"><a class="nav-link active" href="manage-reviews.html"><i class="fa-solid fa-star me-2"></i>Manage Reviews</a></li>
+                <li class="nav-item"><a class="nav-link" href="website-settings.html"><i class="fa-solid fa-gear me-2"></i>Website Settings</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact-inquiries.html"><i class="fa-solid fa-envelope me-2"></i>Contact Inquiries</a></li>
+            </ul>
+        </aside>
+
+        <main class="content container page-container">
+            <div class="row g-3 mb-3">
+                <div class="col-12 col-md-4">
+                    <div class="section-card text-center py-4">
+                        <div class="fs-6 text-muted mb-1">Pending Reviews</div>
+                        <div class="display-6 fw-bold">3</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="section-card text-center py-4">
+                        <div class="fs-6 text-muted mb-1">Approved Reviews</div>
+                        <div class="display-6 fw-bold">0</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="section-card text-center py-4">
+                        <div class="fs-6 text-muted mb-1">Disapproved Reviews</div>
+                        <div class="display-6 fw-bold">0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-card">
+                <div class="table-responsive">
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th>Customer</th>
+                                <th class="d-none d-md-table-cell">Rating</th>
+                                <th>Review</th>
+                                <th class="d-none d-lg-table-cell">Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Emily Wilson</td>
+                                <td class="d-none d-md-table-cell">5</td>
+                                <td>Absolutely loved the truffle pasta!</td>
+                                <td class="d-none d-lg-table-cell">2025-09-10</td>
+                                <td>
+                                    <button class="btn btn-sm btn-success me-2">Approve</button>
+                                    <button class="btn btn-sm btn-outline-secondary">Disapprove</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>John Smith</td>
+                                <td class="d-none d-md-table-cell">4</td>
+                                <td>Great service and ambiance.</td>
+                                <td class="d-none d-lg-table-cell">2025-09-09</td>
+                                <td>
+                                    <button class="btn btn-sm btn-success me-2">Approve</button>
+                                    <button class="btn btn-sm btn-outline-secondary">Disapprove</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Olivia Martin</td>
+                                <td class="d-none d-md-table-cell">3</td>
+                                <td>Food took a while but tasted good.</td>
+                                <td class="d-none d-lg-table-cell">2025-09-08</td>
+                                <td>
+                                    <button class="btn btn-sm btn-success me-2">Approve</button>
+                                    <button class="btn btn-sm btn-outline-secondary">Disapprove</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
