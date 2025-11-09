@@ -3,15 +3,12 @@ function validateContact() {
     var email = document.getElementById("email").value.trim();
     var message = document.getElementById("message").value.trim();
 
-    // Clear all previous errors
     document.getElementById("nameErr").innerHTML = "";
     document.getElementById("emailErr").innerHTML = "";
     document.getElementById("msgErr").innerHTML = "";
 
-    // ✅ Pattern for name (letters and spaces only)
     var namePattern = /^[A-Za-z\s]+$/;
 
-    // Name validation
     if (name === "") {
         document.getElementById("nameErr").innerHTML = "Please enter your name";
         return false;
@@ -21,7 +18,6 @@ function validateContact() {
         return false;
     }
 
-    // Email validation
     if (email === "") {
         document.getElementById("emailErr").innerHTML = "Please enter your email";
         return false;
@@ -33,7 +29,6 @@ function validateContact() {
         return false;
     }
 
-    // Message validation
     if (message === "") {
         document.getElementById("msgErr").innerHTML = "Please enter your message";
         return false;
@@ -44,5 +39,5 @@ function validateContact() {
         return false;
     }
 
-    return true; // ✅ All valid
+    return true; 
 }

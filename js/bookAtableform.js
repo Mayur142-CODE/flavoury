@@ -7,7 +7,7 @@ function validateBooking() {
     var guests = document.getElementById("guests").value;
     var request = document.getElementById("request").value.trim();
 
-    // Clear previous errors
+   
     document.getElementById("nameErr").innerHTML = "";
     document.getElementById("emailErr").innerHTML = "";
     document.getElementById("phoneErr").innerHTML = "";
@@ -16,16 +16,15 @@ function validateBooking() {
     document.getElementById("guestErr").innerHTML = "";
     document.getElementById("requestErr").innerHTML = "";
 
-    // ✅ Pattern for name (letters and spaces)
+    
     var namePattern = /^[A-Za-z\s]+$/;
 
-    // ✅ Pattern for email
+    
     var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z]+\.[a-z]{2,4}$/;
 
-    // ✅ Pattern for phone (10 digits only)
+    
     var phonePattern = /^[0-9]{10}$/;
 
-    // Validate Name
     if (name === "") {
         document.getElementById("nameErr").innerHTML = "Please enter your name";
         return false;
@@ -35,7 +34,6 @@ function validateBooking() {
         return false;
     }
 
-    // Validate Email
     if (email === "") {
         document.getElementById("emailErr").innerHTML = "Please enter your email";
         return false;
@@ -45,7 +43,6 @@ function validateBooking() {
         return false;
     }
 
-    // Validate Phone
     if (phone === "") {
         document.getElementById("phoneErr").innerHTML = "Please enter your phone number";
         return false;
@@ -55,7 +52,6 @@ function validateBooking() {
         return false;
     }
 
-    // Validate Date
     if (date === "") {
         document.getElementById("dateErr").innerHTML = "Please select a booking date";
         return false;
@@ -67,23 +63,21 @@ function validateBooking() {
         return false;
     }
 
-    // Validate Time
     if (time === "") {
         document.getElementById("timeErr").innerHTML = "Please select a booking time";
         return false;
     }
 
-    // Validate Guests
     if (guests === "") {
         document.getElementById("guestErr").innerHTML = "Please select number of guests";
         return false;
     }
 
-    // Optional Request (if provided, min length check)
+    
     if (request !== "" && request.length < 5) {
         document.getElementById("requestErr").innerHTML = "Request should be at least 5 characters";
         return false;
     }
 
-    return true; // ✅ All valid
+    return true; 
 }

@@ -6,7 +6,7 @@ function validateModalItem() {
     var image = document.getElementById("modalImage").value.trim();
     var desc = document.getElementById("modalDesc").value.trim();
 
-    // Clear old errors
+    
     document.getElementById("modalItemNameErr").innerHTML = "";
     document.getElementById("modalCategoryErr").innerHTML = "";
     document.getElementById("modalPriceErr").innerHTML = "";
@@ -56,5 +56,5 @@ function validateModalItem() {
         return false;
     }
 
-    return true; // ✅ All good
+    return true; 
 }
